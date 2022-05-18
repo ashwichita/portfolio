@@ -1,0 +1,36 @@
+.WelcomeSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background: url(./images/wave-background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;   
+}
+@media (max-width: 480px) {
+    .WelcomeSection{
+        background: url(./images/wave-background-phone.png);
+        background-position: bottom;
+        background-repeat: no-repeat;   
+
+    }
+}
+
+
+
+.WelcomeSection span{
+    border-bottom: 1px #519e8a solid;
+}
+
+
+.WelcomeSection h1{
+    transition: .3s ease-out;
+}
+
+.WelcomeSection h2{
+    transition: .3s ease-out;
+}
+

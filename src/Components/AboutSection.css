@@ -1,0 +1,81 @@
+.AboutSection {
+  background: #519e8a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 80vh;
+}
+
+.SkillsContainer {
+  height: 95px;
+  width: 100vw;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  
+}
+
+.SkillsContainer img {
+  height: 110px;
+  margin: 20px;
+}
+
+.BioContainer {
+  margin: 10vh 0 10vh 0;
+  max-width: 600px;
+}
+
+.BioContainer p {
+  width: 95%;
+  margin: auto;
+  text-align: justify;
+  word-break: keep-all;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.BioContainer img {
+  width: 150px;
+  height: 150px;
+  border: 10px #1f1f1f solid;
+  float: right;
+  margin: 0px 10px 5px 10px;
+}
+
+.SkillList {
+  margin: 10vh 0 10vh 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  list-style: none;
+  text-align: right;
+  border-right: 1px #1f1f1f solid;
+  padding: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .SkillsContainer {
+    justify-content: space-around;
+  }
+  .SkillsContainer img {
+    margin: 0;
+  }
+
+  .SkillList {
+    margin: 0;
+    text-align: center;
+  }
+
+  .SkillList li {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .BioContainer{
+      margin-top: 5vh;
+  }
+}

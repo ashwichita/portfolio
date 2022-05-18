@@ -1,0 +1,102 @@
+.ProjectsSection {
+  background: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.ProjectsSection h1{
+  padding: 3vh;
+}
+
+.ProjectsContainer {
+  background: #519e8a;
+}
+
+.Slider img {
+  background-color: #1f1f1f;
+  border: 10px #519e8a solid;
+  transition: 0.2s ease-out;
+  max-width: 600px;
+  min-height: 10vh;
+  cursor: pointer;
+}
+
+.Slider img:hover {
+  transform: scale(0.9);
+}
+
+.Modal {
+  width: 60vw;
+  height: 60vh;
+  background-color: #519e8a;
+  transition: 0.5s ease-out;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 20px 30px;
+}
+
+.Modal p {
+  font-weight: 600;
+}
+
+.Modal div {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/website-demo.jpg");
+  margin: auto;
+}
+
+@media (max-width: 480px) {
+  .Modal {
+    width: 100vw;
+  }
+}
+
+.Modal div button {
+  all: unset;
+  float: right;
+  margin: 10px;
+  background: #519e8a;
+  color: #f1f1f1;
+  padding: 10px 20px 10px 20px;
+  font: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.Modal div button:hover{
+  transform: scale(.9)
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReactModal__Overlay {
+  transform: translateX(-100vw);
+  opacity: 0;
+  transition: all 150ms ease-in;
+}
+
+.ReactModal__Overlay--after-open {
+  transform: translateX(0vw);
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  transform: translateX(100vw);
+  opacity: 0;
+}
