@@ -39,15 +39,15 @@ const AboutSection = (props) => {
   })
 
   return (
-    <div ref={props.aboutRef} className="AboutSection">
+    <div ref={props.aboutRef} className="about-section">
       <animated.h1 style={titleStyles}>i got you fam</animated.h1>
-      <animated.div style={skillsStyles} className="SkillsContainer">
+      <animated.div style={skillsStyles} className="skills-container">
         <animated.img src={htmlIcon} style={skillsImgStyles}></animated.img>
         <animated.img src={cssIcon} style={skillsImgStyles}></animated.img>
         <animated.img src={jsIcon} style={skillsImgStyles}></animated.img>
         <animated.img src={reactIcon} style={skillsImgStyles}></animated.img>
       </animated.div>
-      <animated.ul className="SkillList" style={SkillListStyles}>
+      <animated.ul className="skill-list" style={SkillListStyles}>
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
@@ -56,7 +56,7 @@ const AboutSection = (props) => {
         <li>Photoshop</li>
         <li>Adobe XD</li>
       </animated.ul>
-      <div className="BioContainer">
+      <div className="bio-container">
         <animated.img
           alt="profile"
           src={profile}
@@ -64,12 +64,11 @@ const AboutSection = (props) => {
         ></animated.img>
 
         <animated.p style={textStyles}>
-          I'm a 27 year old amateur web developer, currently living in Niš,
-          Southern Serbia. I've been learning HTML CSS and JS for a few years,
-          but lately I started learning React as well. The curiosity about web
-          development started already at highschool, after designing a few
-          blogging sites and forums. The software I use mostly comes down to
-          Visual Studio Code, Adobe Photoshop and Adobe XD. I'm a lifelong
+          My name is Mitar Zorić. I'm a 27 year old amateur web developer, currently living in Niš,
+          Southern Serbia. I've been learning HTML CSS and JS for a few years
+          before switching to React, passing many other technologies down the way. I started with basic
+          web development in high school, making a few blogging sites and doing some freelance projects. 
+          The software I use mostly comes down to Visual Studio Code, Adobe Photoshop and Adobe XD. I'm a lifelong
           musician, and I love creative working environment.
         </animated.p>
       </div>
