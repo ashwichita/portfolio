@@ -1,4 +1,4 @@
-.ContactSection{
+.contact-section{
     background: #1f1f1f;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     padding: 20vh 0 20vh 0;
 }
 
-.ContactContainer{
+.contact-container{
     width: 60vw;
     height: 60vh;
     display: flex;
@@ -14,23 +14,23 @@
     justify-content: space-around;
 }
 
-.ContactTab{
+.contact-tab{
     height: 10vh;
     color: #f1f1f1;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 }
 
-.ContactTab a{
+.contact-tab a{
     text-decoration: none;
     color: #f1f1f1;
 }
 
-.ContactTab img{
+.contact-tab img{
     width: 50px;
     height: 50px;
     margin-right: 10px;

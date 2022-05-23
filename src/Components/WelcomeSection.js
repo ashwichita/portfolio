@@ -34,7 +34,7 @@ const WelcomeSection = (props) => {
 
   return (
     <animated.div
-      className="WelcomeSection"
+      className="welcome-section"
       ref={props.welcomeRef}
       style={sectionStyles}
     >

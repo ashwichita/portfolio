@@ -1,4 +1,4 @@
-.AboutSection {
+.about-section {
   background: #519e8a;
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +8,7 @@
   min-height: 80vh;
 }
 
-.SkillsContainer {
+.skills-container {
   height: 95px;
   width: 100vw;
   background-color: #1f1f1f;
@@ -19,17 +19,17 @@
   
 }
 
-.SkillsContainer img {
+.skills-container img {
   height: 110px;
   margin: 20px;
 }
 
-.BioContainer {
+.bio-container {
   margin: 10vh 0 10vh 0;
   max-width: 600px;
 }
 
-.BioContainer p {
+.bio-container p {
   width: 95%;
   margin: auto;
   text-align: justify;
@@ -38,15 +38,15 @@
   font-weight: 600;
 }
 
-.BioContainer img {
-  width: 150px;
-  height: 150px;
-  border: 10px #1f1f1f solid;
+.bio-container img {
+  width: 200px;
+  height: 200px;
+  border: 10px #f1f1f1 solid;
   float: right;
   margin: 0px 10px 5px 10px;
 }
 
-.SkillList {
+.skill-list {
   margin: 10vh 0 10vh 0;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -58,24 +58,24 @@
 }
 
 @media (max-width: 480px) {
-  .SkillsContainer {
+  .skills-container {
     justify-content: space-around;
   }
-  .SkillsContainer img {
+  .skills-container img {
     margin: 0;
   }
 
-  .SkillList {
+  .skill-list {
     margin: 0;
     text-align: center;
   }
 
-  .SkillList li {
+  .skill-list li {
     display: inline-block;
     padding: 5px;
   }
 
-  .BioContainer{
+  .bio-container{
       margin-top: 5vh;
   }
 }

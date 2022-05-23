@@ -31,27 +31,27 @@ const ContactSection = (props) => {
   
 
   return (
-    <div className="ContactSection" ref={props.contactRef}>
-      <div className="ContactContainer">
-        <animated.div className="ContactTab" style={contactStyles1}>
+    <div className="contact-section" ref={props.contactRef}>
+      <div className="contact-container">
+        <animated.div className="contact-tab" style={contactStyles1}>
           <img alt='icon' src={MailIcon}></img>
-          <a href="mitarzoric@yahoo.com">mitarzoric@yahoo.com</a>
+          <a href="mailto:mitarzoric@yahoo.com">mitarzoric@yahoo.com</a>
         </animated.div>
-        <animated.div className="ContactTab" style={contactStyles2}>
+        <animated.div className="contact-tab" style={contactStyles2}>
           <img alt='icon' src={PhoneIcon}></img>
-          <a href="0638216373">063/821-63-73</a>
+          <a href="tel:0638216373">063/821-63-73</a>
         </animated.div>
-        <animated.div className="ContactTab" style={contactStyles3}>
+        <animated.div className="contact-tab" style={contactStyles3}>
           <img alt='icon' src={GithubIcon}></img>
-          <a href='https://github.com/ashwichita'>github.com/ashwichita</a>
+          <a href='https://github.com/ashwichita' target='_blank' rel="noreferrer">github.com/ashwichita</a>
         </animated.div>
-        <animated.div className="ContactTab" style={contactStyles4}>
+        <animated.div className="contact-tab" style={contactStyles4}>
           <img alt='icon' src={FacebookIcon}></img>
-          <a href='https://www.facebook.com/mitar.zoric/'>facebook.com/mitar.zoric</a>
+          <a href='https://www.facebook.com/mitar.zoric/' target='_blank' rel="noreferrer">facebook.com/mitar.zoric</a>
         </animated.div>
-        <animated.div className="ContactTab" style={contactStyles5}>
+        <animated.div className="contact-tab" style={contactStyles5}>
           <img alt='icon' src={YoutubeIcon}></img>
-          <a href='https://www.youtube.com/user/AsharakWizeGrynch'>/AsharakWizeGrynch</a>
+          <a href='https://www.youtube.com/user/AsharakWizeGrynch' target='_blank' rel="noreferrer">/AsharakWizeGrynch</a>
         </animated.div>
       </div>
     </div>

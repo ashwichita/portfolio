@@ -13,9 +13,8 @@ function App() {
   const [projectsRef, projectsInView] = useInView({threshold : .2});
   const [contactRef, contactInView] = useInView({threshold : .3});
 
-
   
- 
+
   return (
     <div className="App">
         <WelcomeSection welcomeRef={welcomeRef} welcomeInView={welcomeInView}/>

@@ -3,9 +3,10 @@ import { useSpring, animated } from "@react-spring/web";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import logo from "./images/website-demo.jpg";
-import Modal from "react-modal";
-import { useState } from "react";
+import image1 from "./images/landing-page-image.jpg";
+import image2 from "./images/notes-app-image.jpg";
+import image3 from "./images/firestone-react-image.jpg";
+import image4 from "./images/portfolio-image.jpg";
 
 const ProjectsSection = (props) => {
   const Container1Styles = useSpring({
@@ -33,7 +34,7 @@ const ProjectsSection = (props) => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
-    className: "Slider",
+    className: "slider",
     responsive: [
       {
         breakpoint: 1024,
@@ -51,7 +52,7 @@ const ProjectsSection = (props) => {
     slidesToScroll: -1,
     arrows: false,
     autoplay: true,
-    className: "Slider",
+    className: "slider",
     responsive: [
       {
         breakpoint: 1024,
@@ -61,53 +62,28 @@ const ProjectsSection = (props) => {
       },
     ],
   };
-
-  Modal.setAppElement("#root");
-  const [modalIsOpen, setIsOpen] = useState(false);
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
+ 
+  
 
   return (
-    <div className="ProjectsSection" ref={props.projectsRef}>
+    <div className="projects-section" ref={props.projectsRef}>
       <animated.h1 style={TitleStyles}>projects</animated.h1>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        className="Modal"
-        overlayClassName="Overlay"
-        closeTimeoutMS={150}
-      >
-        <h1>Project name</h1>
-        <p>
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-          ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          lorem ipsum
-        </p>
-        <div>
-          <button>live demo</button>
-          <button>code</button>
-        </div>
-      </Modal>
-      <animated.div style={Container1Styles} className="ProjectsContainer">
+     
+      <animated.div style={Container1Styles} className="projects-container">
         <Slider {...carousel1}>
-          <img alt="1" src={logo} onClick={openModal}></img>
-          <img alt="1" src={logo} onClick={openModal}></img>
-          <img alt="1" src={logo} onClick={openModal}></img>
-          <img alt="1" src={logo} onClick={openModal}></img>
+          <a href='https://github.com/ashwichita/landing-page' target='_blank' rel="noreferrer"><img alt="1" src={image1}></img></a>
+          <a href='https://github.com/ashwichita/notes-app' target='_blank' rel="noreferrer"><img alt="2" src={image2}></img></a>
+          <a href='https://github.com/ashwichita/firebase-react' target='_blank' rel="noreferrer"><img alt="3" src={image3}></img></a>
+          <a href='https://github.com/ashwichita/portfolio' target='_blank' rel="noreferrer"><img alt="4" src={image4}></img></a>
         </Slider>
       </animated.div>
       <animated.h1 style={TitleStyles}>...older projects</animated.h1>
-      <animated.div style={Container2Styles} className="ProjectsContainer">
+      <animated.div style={Container2Styles} className="projects-container">
         <Slider {...carousel2}>
-          <img alt="1" src={logo}></img>
-          <img alt="1" src={logo}></img>
-          <img alt="1" src={logo}></img>
-          <img alt="1" src={logo}></img>
+          <img alt="1" src={image2}></img>
+          <img alt="1" src={image2}></img>
+          <img alt="1" src={image2}></img>
+          <img alt="1" src={image2}></img>
         </Slider>
       </animated.div>
     </div>
